@@ -15,8 +15,8 @@ if (!$conn) {
 //	$text = $_GET['text'];
 //	$task_desc = $_GET['task_desc'];
 
-$sql = "INSERT INTO Teams (Team_name)
-VALUES ('New York Knicks')";
+$sql = "INSERT INTO Post (Title, Text_desc, Priority, Date)
+VALUES ('New York Knicks', 'Testing', 'NULL', 'NULL')";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
