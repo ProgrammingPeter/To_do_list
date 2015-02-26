@@ -39,36 +39,37 @@
 			<p>
 				Sports To Do is a simple page designed to keep track of your tasks. You come here and write down the tasks for your players to prepare them as best as you can until the next game. You can easily create,edit, and delete tasks.
 			</p>
-			<input type="text" class="form-control" placeholder="Task title"> 
-			<br/>
-			<br/>
-			<textarea class="form-control" rows="3" placeholder="Task description"></textarea>
-			<br/>
-			<br/>
+			<form action="database_insert.php" method="get">
+				<input type="text" class="form-control" placeholder="Task title" name="title"> 
+				<br/>
+				<br/>
+				<textarea class="form-control" rows="3" placeholder="Task description" name="task_desc"></textarea>
+				<br/>
+				<br/>
 
-			<div class="container">
-			    <div class="row">
-			        <div class='col-sm-6'>
-			            <div class="form-group">
-			                <div class='input-group date' id='datetimepicker1'>
-			                    <input type='text' class="form-control" placeholder="Try me..." id="datepicker" />
-			                    <br/>
-			                    <br/>
-			                    <a href="show.html" class="button button-pill button-caution" id="button">Add to list</a>
-			                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-			                    </span>
-			                </div>
-			            </div>
-			        </div>
-			        <!--
-			        <script type="text/javascript">
-			                $('#datepicker').pickatime()
-			      
-			        </script>
-			        -->
-			    </div>
-			</div>
-
+				<div class="container">
+				    <div class="row">
+				        <div class='col-sm-6'>
+				            <div class="form-group">
+				                <div class='input-group date' id='datetimepicker1'>
+				                    <input type='text' class="form-control" placeholder="Try me..." id="datepicker" />
+				                    <br/>
+				                    <br/>
+				                    <a href="show.html" class="button button-pill button-caution" id="button">Add to list</a>
+				                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+				                    </span>
+				                </div>
+				            </div>
+				        </div>
+				        <!--
+				        <script type="text/javascript">
+				                $('#datepicker').pickatime()
+				      
+				        </script>
+				        -->
+				    </div>
+				</div>
+			</form>
 		</section>
 <!--
 		<section class="row">
