@@ -671,4 +671,11 @@ textarea{
   max-height:200px;
 }
 
+#button{
+  margin-left: 25%;
+    width: 50%; 
+  min-width:50%; 
+  max-width:50% ; 
+
+}
 /*# sourceMappingURL=main.css.map */
